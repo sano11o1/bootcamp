@@ -5,7 +5,7 @@
     .thread-list-item
       .thread-list-item__inner
         .thread-list-item__author
-          = link_to reservation.user do
+          = link_to reservation.user, class: 'thread-list-item__author-link' do
             = image_tag reservation.user.avatar_url, class: "thread-list-item__author-icon a-user-icon is-#{reservation.user.role}"
         header.thread-list-item-title
           h2.thread-list-item-title__title(itemprop='name')
